@@ -5,6 +5,8 @@ import { BiLogoReact } from 'react-icons/bi';
 import { BiLogoJavascript } from 'react-icons/bi';
 import { DiCss3Full } from 'react-icons/di';
 import { BsMarkdown } from 'react-icons/bs';
+import { VscJson } from 'react-icons/vsc';
+
 
 const Navbar = ({ setActiveTab, activeTab }) => {
   return (
@@ -38,7 +40,7 @@ const Navbar = ({ setActiveTab, activeTab }) => {
               className={`p-4 border-b-2 border-transparent rounded-t-lg ${activeTab === 'skills' ? 'text-white' : 'hover:text-gray-300 dark:hover:text-gray-300'
                 } dark:hover:text-white flex items-center`}
             >
-              <BiLogoJavascript size={18} className="mr-2 text-blue-500" /> Skills.js
+              <VscJson size={18} className="mr-1 text-yellow-600" /> Skills.json
             </a>
           </li>
           <li className="mr-2" role="presentation">
@@ -48,7 +50,7 @@ const Navbar = ({ setActiveTab, activeTab }) => {
               className={`p-4 border-b-2 border-transparent rounded-t-lg ${activeTab === 'projects' ? 'text-white' : 'hover:text-gray-300 dark:hover:text-gray-300'
                 } dark:hover:text-white flex items-center`}
             >
-              <DiCss3Full size={18} className="mr-2 text-blue-500" /> Projects.css
+              <BiLogoJavascript size={18} className="mr-2 text-yellow-500" /> Projects.js
             </a>
           </li>
           <li className="mr-2" role="presentation">
@@ -58,7 +60,7 @@ const Navbar = ({ setActiveTab, activeTab }) => {
               className={`p-4 border-b-2 border-transparent rounded-t-lg ${activeTab === 'contact' ? 'text-white' : 'hover:text-gray-300 dark:hover:text-gray-300'
                 } dark:hover:text-white flex items-center`}
             >
-              <BsMarkdown size={18} className="mr-2 text-blue-500" /> Contact.md
+              <BsMarkdown size={18} className="mr-2 text-purple-500" /> Contact.md
             </a>
           </li>
         </ul>

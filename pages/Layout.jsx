@@ -7,6 +7,7 @@ import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
+import './index.css'
 
 const Layout = () => {
   const [activeTab, setActiveTab] = useState('home'); // 'home' is the default active tab
@@ -38,6 +39,7 @@ const Layout = () => {
           {renderContent()}
         </div>
       </div>
+
     </div>
   );
 };
