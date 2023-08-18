@@ -60,7 +60,7 @@ const Navbar = ({ setActiveTab, activeTab }) => {
               className={`p-4 border-b-2 border-transparent rounded-t-lg ${activeTab === 'contact' ? 'text-white' : 'hover:text-gray-300 dark:hover:text-gray-300'
                 } dark:hover:text-white flex items-center`}
             >
-              <BsMarkdown size={18} className="mr-2 text-purple-500" /> Contact.md
+              <DiCss3Full size={18} className="mr-2 text-blue-500" /> Contact.css
             </a>
           </li>
         </ul>
