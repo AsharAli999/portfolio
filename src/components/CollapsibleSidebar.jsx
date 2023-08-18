@@ -6,6 +6,7 @@ import { BiLogoJavascript } from 'react-icons/bi';
 import { DiCss3Full } from 'react-icons/di';
 import { BsMarkdown } from 'react-icons/bs';
 import { AiFillFolder } from 'react-icons/ai';
+import { VscJson } from 'react-icons/vsc';
 import Home from '../../pages/Home';
 import Navbar from './Navbar';
 
@@ -27,9 +28,9 @@ const CollapsibleSidebar = () => {
       items: [
         { text: 'Home.html', link: '#', icon: <AiFillHtml5 size={18} className="mr-2 text-orange-600" /> },
         { text: 'About.jsx', link: '#', icon: <BiLogoReact size={18} className="mr-2 text-blue-500" /> },
-        { text: 'Skills.js', link: '#', icon: <BiLogoJavascript size={18} className="mr-2 text-yellow-500" /> },
-        { text: 'Projects.css', link: '#', icon: <DiCss3Full size={18} className="mr-2 text-blue-600" /> },
-        { text: 'Contact.md', link: '#', icon: <BsMarkdown size={18} className="mr-2 text-purple-600" /> },
+        { text: 'Skills.json', link: '#', icon: <VscJson size={18} className="mr-2 text-yellow-600" /> },
+        { text: 'Projects.js', link: '#', icon: <BiLogoJavascript size={18} className="mr-2 text-yellow-500" /> },
+        { text: 'Contact.css', link: '#', icon: <DiCss3Full size={18} className="mr-2 text-blue-500" /> },
       ],
     },
   ];
