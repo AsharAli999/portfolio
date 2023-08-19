@@ -16,7 +16,7 @@ const Navbar = ({ setActiveTab, activeTab }) => {
             <Link
               to="/"
               onClick={() => setActiveTab('home')}
-              className={`p-4 border-b-2 rounded-t-lg ${activeTab === 'home' ? 'text-white' : 'text-gray-300'
+              className={`p-3 border rounded-lg ${activeTab === 'home' ? 'text-white border-transparent bg-slate-800' : 'text-gray-300 border-transparent'
                 } dark:text-gray-300 dark:hover:text-white flex items-center`}
             >
               <AiFillHtml5 size={18} className="mr-2 text-orange-500" /> Home.html
@@ -26,7 +26,7 @@ const Navbar = ({ setActiveTab, activeTab }) => {
             <Link
               to="/about"
               onClick={() => setActiveTab('about')}
-              className={`p-4 border-b-2 border-transparent rounded-t-lg ${activeTab === 'about' ? 'text-white' : 'hover:text-gray-300 dark:hover:text-gray-300'
+              className={`p-3 border rounded-lg  ${activeTab === 'about' ? 'text-white border-transparent bg-slate-800' : 'hover:text-gray-300 dark:hover:text-gray-300 border-transparent'
                 } dark:hover:text-white flex items-center`}
             >
               <BiLogoReact size={18} className="mr-2 text-blue-500" /> About.jsx
@@ -36,7 +36,7 @@ const Navbar = ({ setActiveTab, activeTab }) => {
             <Link
               to="/skills"
               onClick={() => setActiveTab('skills')}
-              className={`p-4 border-b-2 border-transparent rounded-t-lg ${activeTab === 'skills' ? 'text-white' : 'hover:text-gray-300 dark:hover:text-gray-300'
+              className={`p-3 border rounded-lg  ${activeTab === 'skills' ? 'text-white border-transparent bg-slate-800' : 'hover:text-gray-300 dark:hover:text-gray-300 border-transparent'
                 } dark:hover:text-white flex items-center`}
             >
               <VscJson size={18} className="mr-1 text-yellow-600" /> Skills.json
@@ -46,7 +46,7 @@ const Navbar = ({ setActiveTab, activeTab }) => {
             <Link
               to="/projects"
               onClick={() => setActiveTab('projects')}
-              className={`p-4 border-b-2 border-transparent rounded-t-lg ${activeTab === 'projects' ? 'text-white' : 'hover:text-gray-300 dark:hover:text-gray-300'
+              className={`p-3 border rounded-lg ${activeTab === 'projects' ? 'text-white border-transparent bg-slate-800' : 'hover:text-gray-300 dark:hover:text-gray-300 border-transparent'
                 } dark:hover:text-white flex items-center`}
             >
               <BiLogoJavascript size={18} className="mr-2 text-yellow-500" /> Projects.js
@@ -56,7 +56,7 @@ const Navbar = ({ setActiveTab, activeTab }) => {
             <Link
               to="/contact"
               onClick={() => setActiveTab('contact')}
-              className={`p-4 border-b-2 border-transparent rounded-t-lg ${activeTab === 'contact' ? 'text-white' : 'hover:text-gray-300 dark:hover:text-gray-300'
+              className={`p-3 border rounded-lg  ${activeTab === 'contact' ? 'text-white border-transparent bg-slate-800' : 'hover:text-gray-300 dark:hover:text-gray-300 border-transparent'
                 } dark:hover:text-white flex items-center`}
             >
               <DiCss3Full size={18} className="mr-2 text-blue-500" /> Contact.css

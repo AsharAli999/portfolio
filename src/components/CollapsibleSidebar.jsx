@@ -13,7 +13,13 @@ const CollapsibleSidebar = () => {
   const [openMenus, setOpenMenus] = useState([]);
 
   const menuItems = [
-
+    {
+      label: 'Porfolio',
+      icon: <FaPortrait size={20} className="mr-2 text-green-500" />,
+      items: [
+        { link: '/' }
+      ],
+    },
     {
       label: 'Pages',
       icon: <AiFillFolder size={20} className="mr-2 text-orange-400 flex-shrink-0" />,
