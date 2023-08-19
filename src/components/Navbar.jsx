@@ -4,9 +4,8 @@ import { AiFillHtml5 } from 'react-icons/ai';
 import { BiLogoReact } from 'react-icons/bi';
 import { BiLogoJavascript } from 'react-icons/bi';
 import { DiCss3Full } from 'react-icons/di';
-import { BsMarkdown } from 'react-icons/bs';
 import { VscJson } from 'react-icons/vsc';
-
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ setActiveTab, activeTab }) => {
   return (
@@ -14,54 +13,54 @@ const Navbar = ({ setActiveTab, activeTab }) => {
       <div className="mb-4 border-b bg-gray-800 dark:bg-gray-900 h-30 border-gray-200 dark:border-gray-700">
         <ul className="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
           <li className="mr-2 ml-8" role="presentation">
-            <a
-              to="#"
+            <Link
+              to="/"
               onClick={() => setActiveTab('home')}
               className={`p-4 border-b-2 rounded-t-lg ${activeTab === 'home' ? 'text-white' : 'text-gray-300'
                 } dark:text-gray-300 dark:hover:text-white flex items-center`}
             >
-              <AiFillHtml5 size={18} className="mr-2 text-orange-600" /> Home.html
-            </a>
+              <AiFillHtml5 size={18} className="mr-2 text-orange-500" /> Home.html
+            </Link>
           </li>
           <li className="mr-2" role="presentation">
-            <a
-              to="#"
+            <Link
+              to="/about"
               onClick={() => setActiveTab('about')}
               className={`p-4 border-b-2 border-transparent rounded-t-lg ${activeTab === 'about' ? 'text-white' : 'hover:text-gray-300 dark:hover:text-gray-300'
                 } dark:hover:text-white flex items-center`}
             >
               <BiLogoReact size={18} className="mr-2 text-blue-500" /> About.jsx
-            </a>
+            </Link>
           </li>
           <li className="mr-2" role="presentation">
-            <a
-              to="#"
+            <Link
+              to="/skills"
               onClick={() => setActiveTab('skills')}
               className={`p-4 border-b-2 border-transparent rounded-t-lg ${activeTab === 'skills' ? 'text-white' : 'hover:text-gray-300 dark:hover:text-gray-300'
                 } dark:hover:text-white flex items-center`}
             >
               <VscJson size={18} className="mr-1 text-yellow-600" /> Skills.json
-            </a>
+            </Link>
           </li>
           <li className="mr-2" role="presentation">
-            <a
-              to="#"
+            <Link
+              to="/projects"
               onClick={() => setActiveTab('projects')}
               className={`p-4 border-b-2 border-transparent rounded-t-lg ${activeTab === 'projects' ? 'text-white' : 'hover:text-gray-300 dark:hover:text-gray-300'
                 } dark:hover:text-white flex items-center`}
             >
               <BiLogoJavascript size={18} className="mr-2 text-yellow-500" /> Projects.js
-            </a>
+            </Link>
           </li>
           <li className="mr-2" role="presentation">
-            <a
-              to="#"
+            <Link
+              to="/contact"
               onClick={() => setActiveTab('contact')}
               className={`p-4 border-b-2 border-transparent rounded-t-lg ${activeTab === 'contact' ? 'text-white' : 'hover:text-gray-300 dark:hover:text-gray-300'
                 } dark:hover:text-white flex items-center`}
             >
               <DiCss3Full size={18} className="mr-2 text-blue-500" /> Contact.css
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

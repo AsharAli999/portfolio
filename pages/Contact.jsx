@@ -1,38 +1,38 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 
 const Contact = () => {
-  const [state, setstate] = useState(`
-1
-2     .mail {
-3        email: asherali1001@gmail.com;
-4      } 
-5
-6     .social {
-7        linkedIn : @asharali999;
-8        github : @AsharAli999;
-9      }
-10
-11    #cell {
-12        number : 0322-9282899;
-13     }
-14
-15    .productivity : {
-16        product-Hunt : @ashar_ali3
-17        dev-io : @asharali999
-18     }
-  `);
+  const codeSnippet = `
+   
+  .mail {
+      email: asherali1001@gmail.com;
+    } 
 
+    .social {
+      linkedIn : @asharali999;
+      github : @AsharAli999;
+      fiverr : @asharali999;
+    }
+
+    #cell {
+      number : 0322-9282899;
+    }
+
+    .productivity : {
+      product-Hunt : @ashar_ali3;
+      dev-io : @asharali999;
+    }
+
+  `;
 
   return (
     <div className="p-4 bg-white dark:bg-gray-900 shadow h-full">
-      <p className='text-yellow-500 text-md'>
-        <pre className="text-yellow-500 text-md whitespace-pre-line">
-          {state}
-        </pre>
-
-      </p>
+      <SyntaxHighlighter language="css" style={dracula}>
+        {codeSnippet}
+      </SyntaxHighlighter>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
