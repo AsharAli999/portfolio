@@ -21,7 +21,7 @@ import Projects as 'projects'
       url: 'https://json-xml-converter.vercel.app'
     },
     Video-streaming-app: {
-      url: 'http://onlinemocks.com/'
+      url: 'https://online-video-stream.netlify.app'
     }
   }
   `;
