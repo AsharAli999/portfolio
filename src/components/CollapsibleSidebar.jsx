@@ -47,7 +47,7 @@ const CollapsibleSidebar = () => {
         <div className="px-4 py-2 border-b border-gray-700">
           <div className="flex items-center space-x-2">
             <FaCode className="text-blue-400" />
-            <span className="text-lg font-semibold">VS Code</span>
+            <span className="text-lg font-semibold">My Code</span>
           </div>
         </div>
         <div className="flex-1 overflow-y-auto">
