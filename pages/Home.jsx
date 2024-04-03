@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import resume from './resume.pdf';
+import ashar_resume from './ashar_resume.pdf
 
 const Home = () => {
   const [typedName, setTypedName] = useState('');
