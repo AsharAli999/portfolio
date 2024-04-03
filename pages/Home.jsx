@@ -84,7 +84,7 @@ const Home = () => {
         </span>
       </p>
       <a
-        href={resume}
+        href={ashar_resume}
         style={{ ...buttonStyle, ...buttonHoverStyle }}
         download="resume.pdf"
         target="_blank"
